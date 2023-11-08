@@ -1,2 +1,21 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args) {
+        Scanner girdi=new Scanner(System.in);
+           System.out.println("lütfen üçgenin birinci kenari giriniz:");
+            int kenar=girdi.nextInt();
+            System.out.println("lütfen üçgenin ikinci kenarini giriniz ");
+            int kenar2=girdi.nextInt();
+            System.out.println("lütfen üçgenin üçüncü kenarini giriniz");
+            int kenar3=girdi.nextInt();
+            if(kenar==kenar2 && kenar2==kenar3){
+              System.out.println("üçgen eşkenar üçgendir");
+            }
+          else if((kenar!=kenar2) && (kenar2!=kenar3) && (kenar!=kenar3)){
+            System.out.println( "üçgen çeşitkenar üçgendir");
+          }
+        else{
+          System.out.println("üçgen ikizkenar üçgendir");
+        } 
+          }    
+          }
